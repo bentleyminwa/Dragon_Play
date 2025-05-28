@@ -3,10 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/0a58c6026c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+
     <title>Dragon Play</title>
   </head>
   <body>
-    <main id="app"></main>
+    <main id="app">
+      <section id="player">
+        <header>
+          <div class="circle">
+            <i class="fa-solid fa-dragon"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </header>
+
+        <section id="thumbnail">
+          <img src="media/thunder_thumbnail.jpeg" alt="" />
+          <h3>Thunder</h3>
+          <p>Imagine Dragons</p>
+        </section>
+
+        <footer id="audio-player">
+          <audio controls id="song">
+            <source src="media/Thunder.webm" type="audio/webm" />
+          </audio>
+
+          <!-- progress bar -->
+          <input type="range" name="progress" id="progress-bar" />
+
+          <div class="controls">
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>

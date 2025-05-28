@@ -5,6 +5,7 @@ const controlIcon = document.getElementById("control-icon");
 song.onloadedmetadata = function () {
   progress.max = song.duration;
   progress.value = song.currentTime;
+  song.autoplay = false;
 };
 
 function playPause() {
@@ -33,3 +34,8 @@ progress.onchange = function () {
 };
 
 controlIcon.addEventListener("click", playPause);
+
+song.onended = function () {
+  controlIcon.classList.remove("fa-pause");
+  controlIcon.classList.add("fa-play");
+};

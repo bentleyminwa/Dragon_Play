@@ -33,16 +33,16 @@
         </section>
 
         <footer id="audio-player">
-          <audio controls id="song">
+          <audio id="song">
             <source src="media/Thunder.webm" type="audio/webm" />
           </audio>
 
           <!-- progress bar -->
-          <input type="range" name="progress" id="progress-bar" />
+          <input type="range" name="progress" id="progress-bar" value="0" />
 
           <div class="controls">
             <i class="fa-solid fa-backward"></i>
-            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-play" id="control-icon"></i>
             <i class="fa-solid fa-forward"></i>
           </div>
         </footer>
